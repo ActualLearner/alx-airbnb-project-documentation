@@ -1,90 +1,32 @@
-## Features and Functionalities
+# Backend Features and Functionalities
 
-### 1. User Management
+This document outlines the key features and backend modules of the Airbnb Clone project.
 
-* **User Registration**
-  Users can sign up as guests or hosts.
-  Authentication uses secure methods such as JWT (JSON Web Tokens).
+## Overview
 
-* **User Login and Authentication**
-  Users can log in via email and password.
-  OAuth support (e.g., Google, Facebook) can be included for social logins.
+The PNG diagram included in this directory provides a structured breakdown of all core functionalities supported by the backend, including:
 
-* **Profile Management**
-  Users can update profile details such as name, profile photo, contact info, and preferences.
+- User registration, login, and role management
+- Property listing and availability management
+- Search and filtering system
+- Booking creation, tracking, and cancellation
+- Secure payment processing
+- Review and rating system
+- User messaging system
+- Notification handling
+- Admin dashboard for managing the platform
 
----
+## File
 
-### 2. Property Listings Management
+- `features-diagram.png`: Visual representation of backend features and their relationships.
 
-* **Add Listings**
-  Hosts can create listings with title, description, location, price, amenities, and availability.
+## Notes
 
-* **Edit/Delete Listings**
-  Hosts have the ability to update or remove their listings.
+This visual serves as a reference for development and design alignment. All functionalities are based on the project specification for the ALX Airbnb Clone backend.
 
----
-
-### 3. Search and Filtering
-
-* Search functionality includes filters for:
-
-  * Location
-  * Price range
-  * Number of guests
-  * Amenities (e.g., Wi-Fi, pool, pet-friendly)
-* Pagination is included for navigating large result sets.
 
 ---
 
-### 4. Booking Management
+## Diagram
 
-* **Booking Creation**
-  Guests can book properties for specified dates.
-  The system validates dates to prevent double bookings.
-
-* **Booking Cancellation**
-  Both guests and hosts can cancel bookings according to the cancellation policy.
-
-* **Booking Status**
-  Tracks the state of bookings: `pending`, `confirmed`, `canceled`, or `completed`.
-
----
-
-### 5. Payment Integration
-
-* Secure payment gateways (e.g., Stripe, PayPal) handle:
-
-  * Guest payments at booking time
-  * Automated host payouts after completion
-* Supports multi-currency transactions.
-
----
-
-### 6. Reviews and Ratings
-
-* Guests can leave reviews and 1–5 star ratings for properties.
-* Hosts may respond to reviews.
-* Reviews are tied to bookings to prevent misuse or spam.
-
----
-
-### 7. Notifications System
-
-* Sends email and/or in-app notifications for:
-
-  * Booking confirmations
-  * Cancellations
-  * Payment updates
-
----
-
-### 8. Admin Dashboard
-
-* Admins can manage:
-
-  * Users
-  * Listings
-  * Bookings
-  * Payments
-* Enables oversight and moderation for the platform.
+![Backend Features Diagram](./airbnb-backend-features.drawio.png)
